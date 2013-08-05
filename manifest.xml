@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<extension type="component" version="3.1" method="update">
+	<name>com_namsImmo</name>
+	<author>Yannick Sereckissy</author>
+	<version>1.0.0</version>
+</extension>
