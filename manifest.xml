@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>com_namsImmo</name>
+	<author>NamsImmo Inc.</author>
+	<!-- Front end file listing-->
+	<files folder="components/com_namsImmo">
+		<filename>index.html</filename>
+        <filename>namsImmo.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>controllers</folder>
+        <folder>language</folder>
+	</files>
+	<!-- Administration section-->
+	<administration>
+        <!-- Backend menu definition-->
+        <menu>COM_NAMSIMMO_MENU_TITLE</menu>
+        <files folder="administrator/components/com_namsImmo">
+            <filename>index.html</filename>
+            <filename>namsImmo.php</filename>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>controllers</folder>
+            <folder>language</folder>
+            <folder>tables</folder>
+        </files>
+	</administration>
+</extension>
+
