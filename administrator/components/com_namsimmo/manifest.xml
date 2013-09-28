@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>com_namsImmo</name>
+	<author>NamsImmo Inc.</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>(c) NamsImmo inc. All right reserved</copyright>
+	<license>The component license goes here!</license>
+	<authorEmail>yannick.sereckissy@gmail.com</authorEmail>
+	<authorUrl>http://www.ocpddhc.org/main</authorUrl>
+	<version>1.0.0</version>
+	<description>COM_NAMSIMMO_XML_DESCRIPTION</description>
+	<!-- Installation and uninstallation files-->
+	<install folder="administrator/components/com_namsimmo">
+	    <sql>
+	        <file driver="mysql" charset="utf8">sql/namsimmo.install.sql</file>
+	    </sql>
+	</install>
+	<uninstall folder="administrator/components/com_namsimmo">
+	    <sql>
+	        <file driver="mysql" charset="utf8">sql/namsimmo.uninstall.sql</file>
+	    </sql>
+	</uninstall>
+	<!-- Front end file listing-->
+	<files folder="components/com_namsimmo">
+		<filename>index.html</filename>
+        <filename>namsimmo.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>controllers</folder>
+        <folder>language</folder>
+	</files>
+	<!-- Administration section-->
+	<administration>
+        <!-- Backend menu definition-->
+        <menu>COM_NAMSIMMO_MENU_TITLE</menu>
+        <files folder="administrator/components/com_namsimmo">
+            <filename>index.html</filename>
+            <filename>namsimmo.php</filename>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>controllers</folder>
+            <folder>language</folder>
+            <folder>tables</folder>
+            <folder>sql</folder>
+        </files>
+	</administration>
+</extension>
+
